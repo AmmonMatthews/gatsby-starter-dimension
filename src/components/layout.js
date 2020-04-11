@@ -41,7 +41,7 @@ const Layout = ({ children, location }) => {
           <Helmet
             title="Ammon Matthews"
             meta={[
-              { name: 'description', content: 'Sample' },
+              { name: 'description', content: 'Software Engineer' },
               { name: 'keywords', content: 'sample, something' },
             ]}
           >
