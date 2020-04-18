@@ -1,10 +1,22 @@
 import PropTypes from 'prop-types'
 import React from 'react'
-import pic01 from '../images/pic01.jpg'
+import pic01 from '../images/me.jpg'
 import pic02 from '../images/pic02.jpg'
 import pic03 from '../images/pic03.jpg'
 
+const skills = [
+  { name:'HTML', icon:'fa-html5'},
+  { name:'CSS', icon:'fab fa-css3'},
+  { name:'JAVASCRIPT', icon:'fab fa-js-square'},
+  { name:'REACT', icon:'fab fa-react'},
+  { name:'NODE.JS', icon:'fab fa-node-js'},
+  { name:'PYTHON', icon:'fab fa-python'},
+]
+
 class Main extends React.Component {
+  
+ 
+  
   render() {
     let close = (
       <div
@@ -14,6 +26,7 @@ class Main extends React.Component {
         }}
       ></div>
     )
+
 
     return (
       <div
@@ -29,29 +42,48 @@ class Main extends React.Component {
           style={{ display: 'none' }}
         >
           <h2 className="major">About</h2>
+          <div className="about">
           <span className="image main">
             <img src={pic01} alt="" />
           </span>
           <p>
-            Aenean ornare velit lacus, ac varius enim ullamcorper eu. Proin
-            aliquam facilisis ante interdum congue. Integer mollis, nisl amet
-            convallis, porttitor magna ullamcorper, amet egestas mauris. Ut
-            magna finibus nisi nec lacinia. Nam maximus erat id euismod egestas.
-            By the way, check out my <a href="#work">awesome work</a>.
+            I am a progammer who loves to create and collaborate on cutting edge technology. If you have an idea, contact me and lets make something great!
           </p>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis
-            dapibus rutrum facilisis. Class aptent taciti sociosqu ad litora
-            torquent per conubia nostra, per inceptos himenaeos. Etiam tristique
-            libero eu nibh porttitor fermentum. Nullam venenatis erat id
-            vehicula viverra. Nunc ultrices eros ut ultricies condimentum.
-            Mauris risus lacus, blandit sit amet venenatis non, bibendum vitae
-            dolor. Nunc lorem mauris, fringilla in aliquam at, euismod in
-            lectus. Pellentesque habitant morbi tristique senectus et netus et
-            malesuada fames ac turpis egestas. In non lorem sit amet elit
-            placerat maximus. Pellentesque aliquam maximus risus, vel sed
-            vehicula.
-          </p>
+          </div>
+          <div className="contact-info">
+          <ul className="icons">
+            <li>
+              <a
+                href="https://linkedin.com/hamatthews"
+                target="_blank"
+                className="icon fa-linkedin"
+              >
+                <span className="label">LinkedIn</span>
+              </a>
+            </li>
+            <li>
+              <a href="https://facebook.com/ammon.matthews.7" target="_blank" className="icon fa-facebook">
+                <span className="label">Facebook</span>
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://github.com/AmmonMatthews"
+                target="_blank"
+                className="icon fa-github"
+              >
+                <span className="label">GitHub</span>
+              </a>
+            </li>
+          </ul>
+            <div class="contact-info_list">
+              <h4>Contact Info</h4>
+              <ul class="contact-info">
+                <li>208-850-7829</li>
+                <li>ammonmatthews@gmail.com</li>
+              </ul>
+            </div>  
+          </div>
           {close}
         </article>
 
@@ -63,24 +95,17 @@ class Main extends React.Component {
           style={{ display: 'none' }}
         >
           <h2 className="major">Skills</h2>
-          <span className="image main">
-            <img src={pic02} alt="" />
-          </span>
-          <p>
-            Adipiscing magna sed dolor elit. Praesent eleifend dignissim arcu,
-            at eleifend sapien imperdiet ac. Aliquam erat volutpat. Praesent
-            urna nisi, fringila lorem et vehicula lacinia quam. Integer
-            sollicitudin mauris nec lorem luctus ultrices.
-          </p>
-          <p>
-            Nullam et orci eu lorem consequat tincidunt vivamus et sagittis
-            libero. Mauris aliquet magna magna sed nunc rhoncus pharetra.
-            Pellentesque condimentum sem. In efficitur ligula tate urna.
-            Maecenas laoreet massa vel lacinia pellentesque lorem ipsum dolor.
-            Nullam et orci eu lorem consequat tincidunt. Vivamus et sagittis
-            libero. Mauris aliquet magna magna sed nunc rhoncus amet feugiat
-            tempus.
-          </p>
+          <div className="skills-loop ">
+          {skills.map(item => {
+
+            return(
+              <i className={`icon ${item.icon} fa-3x`}>
+                <h3>{item.name}</h3>  
+              </i>
+            )
+          })}
+          </div>   
+          
           {close}
         </article>
 
@@ -115,7 +140,7 @@ class Main extends React.Component {
           style={{ display: 'none' }}
         >
           <h2 className="major">Contact</h2>
-          <form method="post" action="#">
+          <form method="post" action="https://getform.io/f/d697659e-d986-48d9-937a-a720c00dc669">
             <div className="field half first">
               <label htmlFor="name">Name</label>
               <input type="text" name="name" id="name" />
@@ -140,25 +165,22 @@ class Main extends React.Component {
           <ul className="icons">
             <li>
               <a
-                href="https://twitter.com/HuntaroSan"
-                className="icon fa-twitter"
+                href="https://linkedin.com/in/hamatthews"
+                target="_blank"
+                className="icon fa-linkedin"
               >
-                <span className="label">Twitter</span>
+                <span className="label">LinkedIn</span>
               </a>
             </li>
             <li>
-              <a href="https://codebushi.com" className="icon fa-facebook">
+              <a href="https://facebook.com/ammon.matthews.7" target="_blank"  className="icon fa-facebook">
                 <span className="label">Facebook</span>
               </a>
             </li>
             <li>
-              <a href="https://codebushi.com" className="icon fa-instagram">
-                <span className="label">Instagram</span>
-              </a>
-            </li>
-            <li>
               <a
-                href="https://github.com/codebushi/gatsby-starter-dimension"
+                href="https://github.com/AmmonMatthews"
+                target="_blank"
                 className="icon fa-github"
               >
                 <span className="label">GitHub</span>

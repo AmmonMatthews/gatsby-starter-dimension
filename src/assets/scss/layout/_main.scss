@@ -109,3 +109,47 @@
 			}
 		}
 	}
+
+
+	// My Changes
+
+	.about{
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+
+		.image.main {
+			width: 45%
+		}
+
+		p{
+			width:45%;
+			text-align: center;
+		}
+	}
+
+	.contact-info{
+		display:flex;
+		justify-content: space-around;
+		align-items: center;
+		
+		h4{
+			text-align: center;
+			text-decoration: underline;
+			margin: 0;
+		}
+	
+	};
+
+	.contact-info_list {
+		display: flex;
+		flex-direction: column;
+		
+		ul{
+			display: flex;
+			flex-direction: column;
+			list-style-type: none;
+			padding: 0;
+			
+		}
+	}
