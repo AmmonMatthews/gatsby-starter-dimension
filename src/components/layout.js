@@ -42,7 +42,7 @@ const Layout = ({ children, location }) => {
             title="Ammon Matthews"
             meta={[
               { name: 'description', content: 'Software Engineer' },
-              { name: 'keywords', content: 'sample, something' },
+              { name: 'keywords', content: 'sample , something' },
             ]}
           >
             <html lang="en" />

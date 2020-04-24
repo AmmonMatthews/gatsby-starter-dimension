@@ -3,15 +3,8 @@ import React from 'react'
 import pic01 from '../images/me.jpg'
 import pic02 from '../images/pic02.jpg'
 import pic03 from '../images/pic03.jpg'
+import {skills, projects} from '../components/Skills.js'
 
-const skills = [
-  { name:'HTML', icon:'fa-html5'},
-  { name:'CSS', icon:'fab fa-css3'},
-  { name:'JAVASCRIPT', icon:'fab fa-js-square'},
-  { name:'REACT', icon:'fab fa-react'},
-  { name:'NODE.JS', icon:'fab fa-node-js'},
-  { name:'PYTHON', icon:'fab fa-python'},
-]
 
 class Main extends React.Component {
   
@@ -99,9 +92,14 @@ class Main extends React.Component {
           {skills.map(item => {
 
             return(
-              <i className={`icon ${item.icon} fa-3x`}>
-                <h3>{item.name}</h3>  
-              </i>
+
+                <div className='skills-container'>
+                  {/* <div>
+                    <img className="skill-img" src={item.icon} alt={`picture of ${item.name}`} />
+                  </div> */}
+                  <h3>{item.name}</h3> 
+                  
+                </div>
             )
           })}
           </div>   
@@ -117,18 +115,21 @@ class Main extends React.Component {
           style={{ display: 'none' }}
         >
           <h2 className="major">Projects</h2>
-          <span className="image main">
-            <img src={pic03} alt="" />
-          </span>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur et adipiscing elit. Praesent
-            eleifend dignissim arcu, at eleifend sapien imperdiet ac. Aliquam
-            erat volutpat. Praesent urna nisi, fringila lorem et vehicula
-            lacinia quam. Integer sollicitudin mauris nec lorem luctus ultrices.
-            Aliquam libero et malesuada fames ac ante ipsum primis in faucibus.
-            Cras viverra ligula sit amet ex mollis mattis lorem ipsum dolor sit
-            amet.
-          </p>
+          <div className="projects-loop ">
+          {projects.map(item => {
+
+            return(
+                <div className='projects-container'>
+                  <div>
+                    <img className="projects-img" src={item.icon} alt={`picture of ${item.name}`} />
+                  </div>
+                  <h3>{item.name}</h3> 
+                  <p>{item.description}</p>
+                </div>
+            )
+          })}
+          </div>   
+          <p></p>
           {close}
         </article>
 
