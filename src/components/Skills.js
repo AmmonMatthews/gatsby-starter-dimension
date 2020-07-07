@@ -2,7 +2,8 @@ import HCJ from '../images/HCJ.jpg'
 import Node from '../images/nodejs.jpeg'
 import REACT from '../images/React.png'
 import Python from '../images/python.png'
-import Team from '../images/team.png'
+// import Team from '../images/team.png'
+import Team from '../images/react-node.png'
 
 export const skills = [
     { name:'HTML', icon:HCJ},
