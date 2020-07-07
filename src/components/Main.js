@@ -74,6 +74,7 @@ class Main extends React.Component {
               <ul class="contact-info">
                 <li>208-850-7829</li>
                 <li>ammonmatthews@gmail.com</li>
+                <li>Boise, Idaho</li>
               </ul>
             </div>  
           </div>
