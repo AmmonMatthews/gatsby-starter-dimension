@@ -126,7 +126,7 @@ class Main extends React.Component {
                   </div>
                   <h3>{item.name}</h3> 
                   <p>{item.description}</p>
-                  {/* <p>{item.stack}</p> */}
+                  <p>{item.stack}</p>
                   <a className="button" href={item.github} target="_blank">GitHub</a>
                   <a className="button" href={item.live} target="_blank">Live Demo</a>
                 </div>
