@@ -30,7 +30,7 @@ export const projects = [
     {
         name:"Garden of Knowledge", 
         icon:Garden, 
-        stack:"Tech Stack:Refer to GitHub", 
+        stack:"Tech Stack: React, Redux, Sass, Node.js, Knex.js, Express.js, PostgreSQL", 
         description:"A learning management system that is helping the underprivileged, currently the country of Bahrain, to learn English",
         contributionOne: "-Refactored the codebase from an F to a C in codeclimate.com's maintainability score using react-hook-form and validation techniques",
         contributionTwo:"-Designed and created the Marketing and Landing pages for website",
