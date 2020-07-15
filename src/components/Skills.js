@@ -55,7 +55,7 @@ export const projects = [
         icon:Node, 
         stack:"Tech Stack:Node.js,Express,Knex", 
         description:"Created a backend for an application that allows you to input your voice in the problems that are solved by your community",
-        contributionOne:"-Created the API endpoints using the REST method",
+        contributionOne:"-Created a RESTful API",
         contributionTwo:"-Developed the database using PostgreSQL, Express and Knex",
         github:"https://github.com/bw-comake3/backend", 
         live:"https://comake3.herokuapp.com/" 
