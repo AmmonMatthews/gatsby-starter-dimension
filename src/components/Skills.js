@@ -37,7 +37,7 @@ export const projects = [
         contributionThree: "-Deployed the front end with AWS Amplify and Backend with Heroku",
         github:"https://github.com/Lambda-School-Labs/speak-out-fe",
         githubBE:"https://github.com/Lambda-School-Labs/speak-out-be",
-        live:"https://speak-out-bh.com"
+        live:"https://thegardenedu.com/"
     },
     {
         name:"VR Funding Platform",
