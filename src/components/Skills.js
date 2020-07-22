@@ -47,7 +47,7 @@ export const projects = [
         contributionOne:"-Led and organized a team of 5 in a one week sprint",
         contributionTwo:"-Developed the REST API endpoints for the CRUD functionality",
         contributionThree:"-Created the authentication for the front end and maded sure it worked",
-        github:"", 
+        github:"https://github.com/BW-VR-FundingPlatform1", 
         live:"https://vr-funding.now.sh/" 
     },
     {
