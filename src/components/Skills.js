@@ -2,6 +2,7 @@ import HCJ from '../images/HCJ.jpg'
 import Node from '../images/nodejs.jpeg'
 import REACT from '../images/React.png'
 import Python from '../images/python.png'
+import Weight from '../images/weight.png'
 // import Team from '../images/team.png'
 // import Team from '../images/react-node.png'
 
@@ -38,6 +39,17 @@ export const projects = [
         github:"https://github.com/Lambda-School-Labs/speak-out-fe",
         githubBE:"https://github.com/Lambda-School-Labs/speak-out-be",
         live:"https://thegardenedu.com/"
+    },
+    {
+        name:"Weight Lifting Journal",
+        icon:Weight, 
+        stack:"Tech Stack: React, Redux, Material UI", 
+        description:"A journal for the exercises that you perform",
+        contributionOne:"-Created the forms for the CRUD application",
+        contributionTwo:"-Developed API calls to Create, Read, Update and Delete.",
+        contributionThree:"-Implemented the routes for the components to be abel to be client side routing.",
+        github:"https://github.com/Build-Week-WeightLiftingJournal/Front-end",
+        live:"https://weightlifting7.netlify.app/" 
     },
     {
         name:"VR Funding Platform",
@@ -80,14 +92,5 @@ export const projects = [
         github:"https://github.com/AmmonMatthews/construction-forms", 
         live:"https://constforms19.netlify.app" 
     },
-    {
-        name:"Coming Soon",
-        icon:Python, 
-        stack:"", 
-        description:"",
-        contributionOne:"",
-        contributionTwo:"",
-        github:"",
-        live:"" 
-    },
+    
 ]
