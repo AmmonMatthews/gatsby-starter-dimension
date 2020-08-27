@@ -21,7 +21,7 @@ export const skills = [
     { name:'EXPRESS', icon:Python},
     { name:'KNEX', icon:Python},
     { name:'PYTHON', icon:Python},
-    { name:'DJANGO', icon:Python},
+    // { name:'DJANGO', icon:Python},
     // { name:'', icon:Python},
     // { name:'', icon:Python},
   ]
